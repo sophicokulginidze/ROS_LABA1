@@ -12,7 +12,7 @@ int main(int argc, char ** argv)
 {
   ros::init(argc, argv, "publisher");
   ros::NodeHandle n;
-  ros::Publisher pub = n.advertise < std_msgs::String > ("/string_in", 1);
+  ros::Publisher pub = n.advertise < std_msgs::String > ("/string_in", 1);// in
   ros::Rate loop_rate(1);
 
   while (ros::ok()) 
